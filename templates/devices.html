@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+         <thead>
+            <td>Bluetooth Address</td>
+            <td>Local Name</td>
+            <td>Signal Strength (dBm)</td>
+         </thead>
+         
+         {% for device in devices %}
+            <tr>
+               <td>{{device[1]}}</td>
+               <td>{{device[2]}}</td>
+               <td>{{device[3]}}</td>
+            </tr>
+         {% endfor %}
+      </table>
+      
+      <a href = "/">Go back to home page</a>
+   </body>
+</html>
